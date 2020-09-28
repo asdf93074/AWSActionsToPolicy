@@ -1,0 +1,1 @@
+aws iam list-policies --output json --scope AWS > .\list_of_all_managed_policies.json
