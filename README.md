@@ -1,1 +1,5 @@
 # AWSActionsToPolicy
+
+A small python script intended to convert a list of AWS actions into the minimum required AWS-managed policies required. Basically, you need permissions from an IAM account on AWS to perform some operation and you would like to get these permissions by granting the IAM user the minimum required AWS-managed policies. You add the list of actions to the python file (sorry for the hardcode), run the script and it will brute-force output the groups of policies which satisfy your actions. Groups are output with 3 policies in each of them so it is definitely possible that one or two of those policies may not actually be required. This script was created with the intention of narrowing down the policies so you know which policies to look at when creating new permissions.
+
+I'll update this with a detailed description on the requirements and intentions for this script when I have the time.
